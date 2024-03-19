@@ -1,0 +1,98 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    font: 100%;
+}
+/* END RESET */
+
+body {
+    font-family: Shantell Sans;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 20vh);
+}
+
+/* DISPLAY CONFIG */
+.container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+.fix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 5vw);
+    padding: 50px 0;
+}
+.name-input {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.form {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.button {
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+/* FINE CìDISPLAY CONFIG */
+
+/* RISULTATO DEL CONFIG */
+.box {
+    display: none;
+    /* display: grid; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 12vw);
+}
+
+.container-cell {
+    border: 1px solid white;
+    border-radius: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    padding: 20px;
+}
+.back {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px;
+    margin-inline: 150px;
+    text-align: center;
+}
+.grid {
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 5vw);
+    margin: 20px;
+    gap: 0.5rem; */
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.cell {
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+}
+/* FINE RISULTATO CONFIG */
